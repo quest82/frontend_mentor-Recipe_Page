@@ -1,0 +1,132 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+.article {
+  flex-direction: column;
+}
+
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 54%, 90%);
+  color: hsl(30, 10%, 34%);
+}
+
+.article {
+  max-width: 40rem;
+  background-color: hsl(0, 0%, 100%);
+  margin: 2em 0;
+  padding: 2em;
+  border-radius: 15px;
+}
+
+.flex {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  order: -1;
+  border-radius: 11px;
+  margin-bottom: 1.6em;
+}
+
+/* Layout */
+
+.timing_container {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1.5rem 1.3rem;
+  border-radius: 12px;
+  margin-bottom: 1.7rem;
+}
+
+.Ingredients_container,
+.Instruction_container {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid hsla(30, 10%, 34%, 0.2);
+}
+
+.nutrition_count {
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid hsla(30, 10%, 34%, 0.1);
+}
+
+.nutrients,
+.nutrient_value {
+  width: 50%;
+}
+
+/* Text */
+
+p {
+  line-height: 1.6;
+}
+
+li {
+  padding-left: 1rem;
+  line-height: 2;
+}
+
+.Ingredients_container li,
+.Instruction_container li {
+  margin-left: 1.5rem;
+}
+
+li::marker {
+  font-size: 0.875rem;
+}
+
+.Ingredients_container li::marker,
+.Instruction_container li::marker,
+.nutrient_value {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.title {
+  font-size: 2.7rem;
+  margin-bottom: 0.9rem;
+  color: hsl(24, 5%, 18%);
+}
+
+.subtitle {
+  color: hsl(14, 45%, 36%);
+  font-size: 1.9rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  margin-bottom: 1.3em;
+}
+
+.aside_heading {
+  font-size: 1.3rem;
+  display: block;
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 0.65rem;
+}
+
+.timing_container li {
+  margin-left: 1.75rem;
+}
+
+.timing_container li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
